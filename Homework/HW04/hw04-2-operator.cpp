@@ -3,6 +3,8 @@
 */
 #include <stdio.h>
 
+#include <stdio.h>
+
 int main() {
     int a = 0, b = 0;
     printf("Please enter values (a b): ");
@@ -12,7 +14,13 @@ int main() {
     printf("a + b = %d \n", a + b);
     printf("a - b = %d \n", a - b);
     printf("a * b = %d \n", a * b);
-    printf("a / b = %d (b must be greater than 0)\n", b > 0 ? a / b : 0);
+    
+    if (b > 0) {
+        printf("a / b = %d \n", a / b);
+    } else {
+        printf("a / b = Undefined (b must be greater than 0)\n");
+    }
+    
     printf("a %% b = %d \n", a % b);
     printf("++a = %d \n", ++a);
     printf("a-- = %d \n", a--);
@@ -23,8 +31,15 @@ int main() {
     printf("a *= 1 %d \n", a *= 1);
     printf("a *= b %d \n", a *= b);
     printf("a %%= 1 %d \n", a %= 1);
-    printf("a %%= b %d \n", a %= b);
+    
+    if (b != 0) {
+        printf("a %%= b %d \n", a %= b);
+    } else {
+        printf("a %%= b = Undefined (b must not be zero)\n");
+    }
+    
     printf("a && b %d \n", a && b);
     printf("a || b %d \n", a || b);
+    
     return 0;
 }
