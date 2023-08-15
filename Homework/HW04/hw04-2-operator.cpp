@@ -3,7 +3,7 @@
 */
 #include <stdio.h>
 int main() {
-    int a = 2, b = 1 ;
+    int a = 2 , b = 1 ;
     printf( "Please enter value (a b) : " ) ;
     scanf( "%d %d", &a, &b ) ; //TODO: #11 Input variable 'a' and 'b'
 
