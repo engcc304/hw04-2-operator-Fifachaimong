@@ -4,7 +4,7 @@
 #include <stdio.h>
 int main() 
 {
-    int a = 0,b = 0;
+    int a = 0, b = 0;
     printf("Please enter value (a b) : ");
     scanf("%d %d", &a, &b); //TODO: #11 Input variable 'a' and 'b'
 
@@ -21,8 +21,8 @@ int main()
     printf("a += b %d\n", a += b);
     printf("a -= 1 %d\n", a -= 1);
     printf("a -= b %d\n", a -= b);
-    printf("a = 1 %d\n", a= 1);
-    printf("a = b %d\n", a= b);
+    printf("a *= 1 %d\n", a= 1);
+    printf("a *= b %d\n", a= b);
     printf("a %%= 1 %d\n", a %= 1);
     printf("a %%= b %d\n", a %= b);
     printf("a && b %d\n", a && b);
